@@ -1,8 +1,8 @@
-# Sequential_Fair_Allocation_Paper_Codes
-Numerical session codes for sequential fair resource allocation and routing in nonprofit operations.
+# Sequential Fair Allocation and Routing in Nonprofit Operations (Paper Code)
+Numerical session codes for paper: *Sequential Fair Allocation and Routing in Nonprofit Operations*.
 
 ## 1. Overview
-This repository contains all code required to reproduce the numerical experiments and figures for the paper Offline–Online Reinforcement Learning for Linear Mixture MDPs.
+This repository contains all codes required to reproduce the numerical experiments and figures for the paper *Sequential Fair Allocation and Routing in Nonprofit Operations*.
 
 The codebase studies offline–online reinforcement learning under environment shift and unknown behavior policies. It implements synthetic tabular MDP environments with linear-mixture structure, evaluates regret under varying conditions, and generates all figures reported in the study.
 
