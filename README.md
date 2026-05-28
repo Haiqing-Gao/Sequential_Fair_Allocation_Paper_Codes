@@ -1,7 +1,7 @@
 # Sequential_Fair_Allocation_Paper_Codes
 Numerical session codes for sequential fair resource allocation and routing in nonprofit operations.
 
-Overview
+## 1. Overview
 This repository contains all code required to reproduce the numerical experiments and figures for the paper Offline–Online Reinforcement Learning for Linear Mixture MDPs.
 
 The codebase studies offline–online reinforcement learning under environment shift and unknown behavior policies. It implements synthetic tabular MDP environments with linear-mixture structure, evaluates regret under varying conditions, and generates all figures reported in the study.
@@ -14,7 +14,7 @@ Generate plots from cached or newly computed results
 2. Data and experimental setting
 This repository uses synthetically generated data only.
 
-Synthetic environments
+## 2. Synthetic environments
 All experiments are conducted on tabular MDPs constructed using a linear-mixture representation. The environments, transition dynamics, and reward structures are generated programmatically within the codebase.
 
 Offline datasets are generated using predefined behavior policies, with key parameters including:
@@ -24,7 +24,7 @@ tau: effective coverage of offline data
 Delta: environment shift between offline and online phases
 No external datasets are required.
 
-3. Variable definitions
+## 3. Variable definitions
 Below are the main variables used throughout the experiments:
 
 Core parameters
@@ -36,7 +36,8 @@ seed: random seed for reproducibility
 Performance metrics
 regret: cumulative or final regret under the online policy
 final_regret: regret evaluated at the end of learning
-4. Computational requirements
+
+## 4. Computational requirements
 All code is written in Python (>= 3.10).
 
 Dependencies
@@ -59,7 +60,7 @@ Simulation sweeps may take tens of hours (under
  runs) depending on parameter settings
 Cached .pkl files are used to avoid recomputation
 Random seeds are fixed where appropriate for reproducibility
-5. Programs / Code
+## 5. Programs / Code
 Main execution
 source_codes/main.py — Entry point for all experiments
 source_codes/hyperparam.py — Central configuration (SimConfig)
@@ -104,7 +105,7 @@ final_regret_vs_tau_fixed_Delta.pdf
 regret_curves_random_offline.pdf
 Cached intermediate results are stored as .pkl files.
 
-6. Example workflow
+## 6. Example workflow
 Open source_codes/hyperparam.py.
 Set plt_choice to the panel you want.
 Set if_running = 1 to run simulations and cache results.
@@ -112,7 +113,7 @@ Run:
 python source_codes/main.py
 If cached result files already exist, setting if_running = 0 reloads them instead of rerunning the simulations.
 
-7. Baseline algorithms included
+## 7. Baseline algorithms included
 The simulation pipeline compares the proposed method against several baselines, including:
 
 zero: online-only / no useful offline value design
